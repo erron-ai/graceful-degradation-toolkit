@@ -1,0 +1,26 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "graceful-degradation-toolkit"
+version = "0.1.0"
+description = "Middleware for agents to fail gracefully instead of looping at the 85-90% ceiling."
+readme = "README.md"
+requires-python = ">=3.10"
+license = {text = "MIT"}
+authors = [{name = "erron.ai"}]
+dependencies = []
+
+[project.urls]
+Homepage = "https://github.com/erron-ai/graceful-degradation-toolkit"
+Issues = "https://github.com/erron-ai/graceful-degradation-toolkit/issues"
+
+[project.scripts]
+graceful-degradation-toolkit = "graceful_degradation_toolkit.cli:main"
+
+[tool.setuptools]
+package-dir = {"" = "src"}
+
+[tool.setuptools.packages.find]
+where = ["src"]
