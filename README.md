@@ -2,7 +2,7 @@
 
 Middleware for agents to fail gracefully instead of looping at the 85-90% ceiling.
 
-Built by **erron.ai**.
+Built by [Erron AI](https://erron.ai).
 
 ## Why this exists
 - Solve a concrete business problem with a practical, extensible baseline.
